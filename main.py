@@ -7,17 +7,15 @@ cap.set(4, 480)
 
 imgBackground = cv2.imread("Resources/Background.png")
 
+# Importing the mode images into a list
 folderModePath = 'Resources/Modes'
 modePathList = os.listdir(folderModePath)
 imgModeList = []
 
 for path in modePathList:
-    # fullPath = os.path.join(folderModePath, path)
-    # img = cv2.imread(fullPath)
-    # imgModeList.append(img)
     imgModeList.append(cv2.imread(os.path.join(folderModePath, path)))
 
-print(len(imgModeList))
+# print(len(imgModeList))
 
 while True:
     success, img = cap.read()
