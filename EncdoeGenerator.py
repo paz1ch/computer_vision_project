@@ -1,6 +1,7 @@
 import cv2
 import face_recognition
 import pickle
+import os
 
 #Importing student images 
 folderPath = 'Images'
