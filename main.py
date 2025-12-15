@@ -28,9 +28,11 @@ imgBackground = cv2.imread('Resources/background.png')
 folderModePath = 'Resources/modes'
 modePathList = os.listdir(folderModePath)
 imgModeList = []
-
 for path in modePathList:
     imgModeList.append(cv2.imread(os.path.join(folderModePath, path)))
+#print(len(imgModeList))
+
+
 
 # print(len(ingModeList))
 
